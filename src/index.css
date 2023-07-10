@@ -1,0 +1,124 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  *{
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+  }
+  
+  html{
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+  
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+  }
+  
+  body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container{
+    margin-top: 50%;
+    padding-top: 15px;
+    width: 400px;
+    border: 0px solid;
+    background-color: rgba(255, 255, 255, 0.500);
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  button{
+    all: unset;
+    padding: 5px;
+    padding-inline: 6px;
+    border-radius: 100%;
+  }
+  
+  button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 500ms;
+    transform: translateY(-2px);
+  }
+  
+  .text-box{
+    all: unset;
+    width: 19ch;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: text;
+  }
+  
+  #mainweathericon{
+    font-size: 100px;
+  }
+  
+  .main-weather{
+    font-size: 45px;
+    font-weight: 900;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeIn 2000ms;
+  }
+  
+  #specicon{
+    font-size: 30px;
+  }
+  
+  .max-min-humidity{
+    justify-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    margin-left: 48px;
+    animation: fadeIn 2000ms;
+  }
+  
+  .min{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .max{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hum{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .errormsg{
+    display: none;
+    flex-direction: column;
+    animation: fadeIn 2000ms;
+  }
+   
+  .errorimg{
+    margin-left: 45px;
+    height: 300px;
+    width: 300px;
+  }
